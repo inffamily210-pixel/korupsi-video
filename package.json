@@ -1,0 +1,27 @@
+{
+  "name": "the-dark-side-of-corruption",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KORUPSI - dokumenter sinematik (Remotion, 4 gaya visual)",
+  "scripts": {
+    "dev": "remotion studio",
+    "audio": "python3 scripts/make_audio.py",
+    "typecheck": "tsc --noEmit",
+    "render:investigasi": "remotion render Investigasi out/korupsi-investigasi.mp4",
+    "render:edukasi": "remotion render Edukasi out/korupsi-edukasi.mp4",
+    "render:sinematik": "remotion render Sinematik out/korupsi-sinematik.mp4",
+    "render:minimalis": "remotion render MinimalisPremium out/korupsi-minimalis.mp4",
+    "render:all": "npm run render:investigasi && npm run render:edukasi && npm run render:sinematik && npm run render:minimalis"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.545",
+    "@remotion/google-fonts": "4.0.545",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.545"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "typescript": "^5.9.3"
+  }
+}
